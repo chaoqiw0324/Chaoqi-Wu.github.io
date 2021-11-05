@@ -1,0 +1,22 @@
+---
+title: "Introduction"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+# Introduction
+
+Hello,
+My name is Chaoqi Wu and this is my website.
+
+I create this website so that you can know me.
+
+Now this website includes three part: Introduction, Resume and Contact.
+
+(1)Introduction is where we were.
+
+(2)[Resume](Resume.html) is the academic and professional experience
+
+(3)[Contact](Contact.html) is the contact information including email, github and linkedin. 
+

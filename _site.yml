@@ -4,15 +4,18 @@ navbar:
   title: "Home"
   right:
     - text: "About"
-      href: about.html
-    - text: "Plotly"
-      href: plotly.html
-    - text: "Dashboard"
-      href: dashboard.html      
+      href: Introduction.html
+    - text: "Resume"
+      href: Resume.html
+    - text: "Contact"
+      href: Contact.html      
     - icon: fa-envelope fa-lg
-      href: mailto:<you@youremail.com>
+      href: mailto:<wuchaoqi0324@gmail.com>
     - icon: fa-github fa-lg
-      href: http://github.com/<YOUR_GH_NAME>/
+      href: https://github.com/chaoqiw0324
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/%E8%B6%85%E7%A5%BA-%E5%90%B4-52426a222/
+      
     
 output:
   html_document:

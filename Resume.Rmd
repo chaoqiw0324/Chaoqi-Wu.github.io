@@ -1,0 +1,87 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(knitr)
+```
+
+## EDUCATION
+```{r echo=FALSE}
+education <- tibble(
+  a = c("Columbia University, Mailman School of Public Health","  Master of Science in Biostatistics(Public Health Data Science)","Fudan University","  Bachelor of Management in Public Service Administration","University of California in Irvine","  Exchange student, Public Health Policy"),
+  b = c("New York, NY","Expected May 2023","Shanghai, China","September 2017 - June 2021","Irvine, California","Fall 2019") 
+) 
+
+knitr::kable(education,align = "lr",col.names = c('', ''))
+```
+
+## SKILLS
+
+**Programming Languages:** Python(Intermediate),SQL(Beginner) 
+
+**Statistics Software:** R(Intermediate) 
+
+**Language:** English(Intermediate),Chinese(Expert) 
+
+## RESEARCH EXPERIENCE
+```{r,echo=FALSE}
+RE_1 <- tibble(
+  a = c("Fudan University","Research Assistant (Road Safety) "),
+  b = c("Shanghai, China","May - August 2021") 
+) 
+
+knitr::kable(RE_1,align = "lr",col.names = c('', ''))
+```
+- Collected data of non-motorized vehicle riders’ riding behavior. Analysis on Behavior patterns of Non-motorized vehicle riders in Shanghai 
+- Used SPSS, SAS and Excel to correlate the relationship between riding behavior and accidents. 
+- Designed and propose the intervention measurement. 
+- Published and released at the International Symposium on Safety of Vulnerable Road Users
+```{r,echo=FALSE}
+RE_2 <- tibble(
+  a = c("Research Assistant (Health Human Resource)"),
+  b = c("July - December 2018") 
+) 
+
+knitr::kable(RE_2,align = "lr",col.names = c('', ''))
+```
+- What will influence health-worker recommendations of non-scheduled vaccines? A qualitative study of health-worker perspectives in three provinces of China.
+- Converted the collected information into research findings, draft the research paper and present suggestions
+- Reviewed the presented research to gather information for the design of research
+
+## WORK EXPERIENCE
+```{r,echo=FALSE}
+WE_1 <- tibble(
+  a = c("Shanghai No. 1 People’s Hospital","Research Intern"),
+  b = c("Shanghai, China","August September 2020") 
+) 
+
+knitr::kable(WE_1,align = "lr",col.names = c('', ''))
+```
+- Facilitated the research development at Ophthalmic genetic diseases research team 
+- Collected, cleaned and organized research data 
+- Translated research paper and archive management
+```{r,echo=FALSE}
+WE_2 <- tibble(
+  a = c("Hepuhua Biomedical Technology Co., Ltd. Research Intern","Research Intern"),
+  b = c("Shanghai, China","July 2020") 
+) 
+
+knitr::kable(WE_2,align = "lr",col.names = c('', ''))
+```
+- Facilitated the research development at nonalcoholic fatty liver disease unit 
+- Collected, cleaned and organized phase 2 testing of new drug trial data.
+```{r,echo=FALSE}
+WE_3 <- tibble(
+  a = c("Beixin Ruifeng Fund Management Co.,Ltd.","Shanghai, China"),
+  b = c("Marketing Intern","July - August 2019") 
+) 
+
+knitr::kable(WE_3,align = "lr",col.names = c('', ''))
+```
+- Collected and analyzed the revenue of funds which purchase the share of corporation issued in science and development board - Analyzed the short-term and long-term revenue of each fund of the company, as well as the rank among the similar funds.

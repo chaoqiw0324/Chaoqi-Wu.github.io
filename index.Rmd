@@ -4,8 +4,16 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
-# This is Chaoqi Wu's website
+# Introduction
+  The Introduction of this website is [here](Introduction.html)
+  
+  In this part, you will find the brief introduction about this website.
+  
+# Resume
+  If you want to know my academic and professional experience, here is my [resume](resume.html)
+
+# Contact Me
+  If you want to contact me, you can use the button on the top right of the website or get the full contact information [here](Contact.html)
 

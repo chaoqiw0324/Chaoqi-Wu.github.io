@@ -1,0 +1,18 @@
+---
+title: "Contact"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+Here is my contact information 
+
+# Email
+wuchaoqi0324@gmail.com
+
+# Github
+Here is the link to my [github](https://github.com/chaoqiw0324)
+
+# Linkedin
+Here is the link to my [Linkdein](https://www.linkedin.com/in/%E8%B6%85%E7%A5%BA-%E5%90%B4-52426a222/)
