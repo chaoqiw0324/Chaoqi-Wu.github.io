@@ -1,0 +1,92 @@
+---
+title: "dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source_code: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+data("rest_inspec")
+
+rest_inspec <- force(rest_inspec) 
+
+cuisine_df <- rest_inspec %>% 
+  count(cuisine_description,name = "number") %>% 
+  filter(number > 5000)
+
+output <- vector("character", nrow(cuisine_df))
+for (i in (1:nrow(cuisine_df))) {               
+  output[i] <- cuisine_df[i,1]   
+}
+
+mean_score <- rest_inspec %>% 
+  filter(cuisine_description %in% output) %>% 
+  group_by(cuisine_description,dba,street) %>% 
+  summarize(
+    mean_score = mean(score,na.rm = TRUE)
+  ) %>% 
+  mutate(cuisine_description1 = fct_reorder(cuisine_description,mean_score),
+         cuisine_description1 = recode(cuisine_description1,"Latin (Cuban, Dominican, Puerto Rican, South & Central American)" = "Latin"))
+
+mean_score %>% 
+  plot_ly( y = ~ mean_score, color = ~cuisine_description1, type = "box", colors = "viridis")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r,warning=FALSE}
+violation_df <- rest_inspec %>% 
+  group_by(violation_code) %>% 
+  summarize(
+    number =n()
+  ) %>% 
+  filter(number > 2500,
+         violation_code != "NA")
+
+violation_df %>% 
+  mutate(violation_code = fct_reorder(violation_code,number)) %>%
+  plot_ly(x = ~violation_code, y = ~number, color = ~violation_code, type = "bar", colors = "viridis") 
+  
+
+```
+
+### Chart C
+
+```{r}
+year_change <- rest_inspec %>% 
+  separate(inspection_date,into = c("year","month","day"),sep = "-") %>% 
+  filter(grade != "NA",
+         score != "NA",
+         boro != "Missing") %>% 
+  group_by(year,boro) %>% 
+  summarize(
+    score = mean(score, na.rm=TRUE)
+  ) %>% 
+  mutate(year = as.numeric(year))
+
+year_change %>% 
+  plot_ly(x = ~year, y = ~score, color = ~boro, type = "scatter",mode = "line",text = ~boro, colors = "viridis")
+           
+```
+
+
+

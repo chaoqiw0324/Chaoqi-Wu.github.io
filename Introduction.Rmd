@@ -20,3 +20,5 @@ Now this website includes three part: Introduction, Resume and Contact.
 
 (3)[Contact](Contact.html) is the contact information including email, github and linkedin. 
 
+(4)[Dashboard](dashboard.html)  is the homework of DS1. Data comes from restaurants inspection in NYC including three picture.The mean score of different cuisine(inspection over 5000), the number of violation code(over 2500 times) and mean score in each boro over years.
+

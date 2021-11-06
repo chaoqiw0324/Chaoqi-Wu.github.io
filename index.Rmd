@@ -16,4 +16,8 @@ output:
 
 # Contact Me
   If you want to contact me, you can use the button on the top right of the website or get the full contact information [here](Contact.html)
+  
+
+# Dashboard
+  This is the homework part, a [dashboard](dashboard.html) which describing the restaurant inspection in NYC, including the mean score of different cuisine, the number of violation code and mean score in each boro over years.
 
