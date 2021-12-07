@@ -9,8 +9,6 @@ navbar:
       href: Resume.html
     - text: "Contact"
       href: Contact.html 
-    - text: "Dashboard"
-      href: dashboard.html 
     - icon: fa-envelope fa-lg
       href: mailto:<wuchaoqi0324@gmail.com>
     - icon: fa-github fa-lg
