@@ -13,6 +13,9 @@ output:
   
 # Resume
   If you want to know my academic and professional experience, here is my [resume](resume.html)
+  
+# Project 
+  This is a team project about [nyc subway crime and passenger](https://zheyanliu99.github.io/SubwayCrime/), you can use this shinyapp to arrange safe travel in nyc.
 
 # Contact Me
   If you want to contact me, you can use the button on the top right of the website or get the full contact information [here](Contact.html)
